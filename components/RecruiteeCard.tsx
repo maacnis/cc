@@ -1,6 +1,7 @@
 import { FC, JSXElementConstructor, ReactElement, ReactFragment, ReactPortal } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import translations from '../local/translations.json';
 
 interface RecruiteeCardProps {
     recruitee: any;
@@ -39,13 +40,13 @@ export const RecruiteeCard: FC<RecruiteeCardProps> = ({recruitee}) => {
             </div>
             <div className="recruitee-card__information">
                 <p className="information__heading">{recruitee.status}</p>
-                <p>Firstname: {recruitee.fname}</p>
-                <p>Lastname: {recruitee.lname}</p>
-                <p>Age: {Age(recruitee)}</p>
+                <p>{translations.cardFname} {recruitee.fname}</p>
+                <p>{translations.cardLname} {recruitee.lname}</p>
+                <p>{translations.cardAge} {Age(recruitee)}</p>
                 <p>
-                    Email: <Link href={{pathname: `mailto:${recruitee.email}`}}><a>{recruitee.email}</a></Link>
+                    {translations.cardEmail} <Link href={{pathname: `mailto:${recruitee.email}`}}><a>{recruitee.email}</a></Link>
                 </p>
-                <p className="information__address-heading">Address:</p>
+                <p className="information__address-heading">{translations.cardAddress}</p>
                 <p className="information__address">
                     <span className="information__address-line">{addressLines.street}</span>
                     <span className="information__address-line">{addressLines.city}, {addressLines.zip}</span>

@@ -1,11 +1,15 @@
 @mixin heading($size: 'medium', $type: 'default') {
     @if ($type == 'default') {
+        font-weight: 400;
+        font-style: normal;
         line-height: 1;
     } @else if ($type == 'medium') {
         line-height: 1.2;
     }
 
-    @if ($size == 'large') {
+    @if ($size == 'xlarge') {
+        font-size: var(--xlarge-header-size);
+    } @else if ($size == 'large') {
         font-size: var(--large-header-size);
     } @else if ($size == 'medium') {
         font-size: var(--medium-header-size);

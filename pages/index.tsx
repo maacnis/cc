@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import data from '../local/data.json';
+import translations from '../local/translations.json';
 import Header from '../components/header'
 import { RecruiteeList } from '../components/RecruiteeList';
 
@@ -17,7 +18,13 @@ const Home: NextPage = () => {
 			<Header />
 			<div className="Layout_main">
 				<div className="sections">
-					<RecruiteeList recruitees={recruitees} />
+					<section className="section-1">
+						<h1 className="section-heading">{translations.sectionHeading}</h1>
+						<p className="section-description">{translations.sectionDescription}</p>
+					</section>
+					<section className="section-2">
+						<RecruiteeList recruitees={recruitees} />
+					</section>
 				</div>
 			</div>
 		</div>

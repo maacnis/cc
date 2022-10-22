@@ -1,6 +1,39 @@
 .sections section {
+    position: relative;
+}
+
+.section-1,
+.recruitee-list {
     max-width: rem(1440);
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+}
+
+.section-2 {
+    background-color: var(--secondary-background);
+}
+
+.section-heading {
+    @include heading('xlarge');
+}
+
+.section-description {
+    @include body('large');
+
+    width: 70%;
+    margin-bottom: rem(60);
+}
+
+// Mobile
+@include media('<nav') {
+    .section-1 {
+        padding: 0 rem(20);
+    }
+}
+
+// Desktop
+@include media('>=nav') {
+    .section-1 {
+        padding-left: rem(160);
+    }
 }

@@ -7,10 +7,10 @@ interface RecruiteeListProps {
 
 export const RecruiteeList: FC<RecruiteeListProps> = ({recruitees}) => {
     return (
-        <section className="recruitee-list">
+        <div className="recruitee-list">
             {recruitees.map(
                 (recruitee) => <RecruiteeCard key={recruitee.id} recruitee={recruitee} />
             )}
-        </section>
+        </div>
     )
 }

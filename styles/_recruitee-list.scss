@@ -1,5 +1,4 @@
 .recruitee-list {
-    background-color: var(--secondary-background);
     display: grid;
     margin-bottom: rem(20);
 
@@ -8,8 +7,8 @@
 
         content: '';
         position: absolute;
-        width: 70%;
-        height: 50%;
+        width: 50%;
+        height: 49%;
         z-index: 1;
     }
 }
