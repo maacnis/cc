@@ -27,14 +27,16 @@ export const RecruiteeCard: FC<RecruiteeCardProps> = ({recruitee}) => {
 
     return (
         <div className="recruitee-card">
-            <Image
-                src={ImageUrl(recruitee)}
-                width={200}
-                height={286}
-                layout="fixed"
-                className="recruitee-card__image"
-                priority={true}
-            />
+            <div className="recruitee-card__image-container">
+                <Image
+                    src={ImageUrl(recruitee)}
+                    width={200}
+                    height={286}
+                    layout="fixed"
+                    className="recruitee-card__image"
+                    priority={true}
+                />
+            </div>
             <div className="recruitee-card__information">
                 <p className="information__heading">{recruitee.status}</p>
                 <p>Firstname: {recruitee.fname}</p>
@@ -43,8 +45,8 @@ export const RecruiteeCard: FC<RecruiteeCardProps> = ({recruitee}) => {
                 <p>
                     Email: <Link href={{pathname: `mailto:${recruitee.email}`}}><a>{recruitee.email}</a></Link>
                 </p>
-                <p>
-                    Address:
+                <p className="information__address-heading">Address:</p>
+                <p className="information__address">
                     <span className="information__address-line">{addressLines.street}</span>
                     <span className="information__address-line">{addressLines.city}, {addressLines.zip}</span>
                     {addressLines.state ? <span className="information__address-line">{addressLines.state}</span> : null}

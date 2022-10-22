@@ -2,5 +2,16 @@
     display: flex;
     align-items: center;
     height: rem(80);
-    padding-left: rem(140);
+}
+
+@include media('<nav') {
+    .header {
+        justify-content: center;
+    }
+}
+
+@include media('>=nav') {
+    .header {
+        padding-left: rem(140);
+    }
 }

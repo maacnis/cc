@@ -29,6 +29,13 @@
 }
 
 @mixin grid-background {
-    background-size: 80px 80px;
     background-image: linear-gradient(90deg,#fff 2px,transparent 0),linear-gradient(180deg,#fff 2px,transparent 0);
+
+    @include media('<nav') {
+        background-size: 40px 40px;
+    }
+
+    @include media('>=nav') {
+        background-size: 80px 80px;
+    }
 }

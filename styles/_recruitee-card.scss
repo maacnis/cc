@@ -1,13 +1,8 @@
 .recruitee-card {
     display: grid;
-    grid-template-areas: "information image";
-    grid-template-columns: 1fr auto;
     background-color: var(--base-background);
-    padding: rem(10);
-    margin: rem(80) rem(78) rem(78) rem(80);
     border: rem(2) solid white;
     z-index: 2;
-    min-height: rem(162);
 }
 
 .recruitee-card__image {
@@ -19,10 +14,56 @@
     grid-area: information;
 }
 
-.information__heading {
-    @include heading('medium', 'medium');
-}
-
 .information__address-line {
     display: block;
+}
+
+// Mobile
+@include media('<nav') {
+    .recruitee-card {
+        grid-template-areas: 
+            "image"
+            "information";
+        grid-template-columns: 1fr auto;
+        padding: rem(10);
+        margin: rem(40) rem(38) rem(38) rem(40);
+        min-height: rem(602);
+    }
+
+    .recruitee-card__image-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .information__heading {
+        @include heading('small');
+
+        text-align: center;
+        margin-top: rem(10);
+        margin-bottom: rem(15);
+    }
+
+    .information__address,
+    .information__address-heading {
+        margin-bottom: rem(5);
+    }
+
+    .information__address-line {
+        @include body('small');
+    }
+}
+
+// Desktop
+@include media('>=nav') {
+    .recruitee-card {
+        grid-template-areas: "information image";
+        grid-template-columns: 1fr auto;
+        padding: rem(10);
+        margin: rem(80) rem(78) rem(78) rem(80);
+        min-height: rem(322);
+    }
+
+    .information__heading {
+        @include heading('medium', 'medium');
+    }
 }

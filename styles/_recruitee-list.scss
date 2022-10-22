@@ -1,7 +1,6 @@
 .recruitee-list {
     background-color: var(--secondary-background);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-bottom: rem(20);
 
     &::before {
@@ -12,5 +11,19 @@
         width: 70%;
         height: 50%;
         z-index: 1;
+    }
+}
+
+// Mobile
+@include media('<nav') {
+    .recruitee-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Desktop
+@include media('>=nav') {
+    .recruitee-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

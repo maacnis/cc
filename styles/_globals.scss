@@ -3,7 +3,7 @@
   --secondary-background: #d0c7b8;
   --large-header-size: #{rem(48)};
   --medium-header-size: #{rem(32)};
-  --small-header-size: #{rem(16)};
+  --small-header-size: #{rem(24)};
   --large-body-size: #{rem(24)};
   --medium-body-size: #{rem(16)};
   --small-body-size: #{rem(14)};
@@ -26,5 +26,10 @@ a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  margin-bottom: rem(10);
 }
 
