@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return math.div($number, $number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function is-number($value) {
+    @return type-of($value) == 'number';
+}
+
+@function rem($value) {
+    $unit: if(is-number($value), unit($value), null);
+
+    @if ($unit == 'px' or unitless($value)) {
+        @return math.div(strip-unit($value), strip-unit($root-size)) * 1rem;
+    }
+
+    @if ($unit == 'rem') {
+        @return $value;
+    }
+
+    @if ($unit == 'em') {
+        @return strip-unit($value) * 1rem;
+    }
+
+    @return $value;
+}

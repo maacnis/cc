@@ -1,0 +1,130 @@
+{
+    "recruitees": [
+        {
+            "id": 1,
+            "fname": "Simbiatu",
+            "lname": "Ajikawo",
+            "image": "/1.jpg",
+            "status": "Dialog",
+            "bornday": "1994-02-23",
+            "email": "little.simz@test.com",
+            "address": [
+                {
+                    "street": "Highbury Hill",
+                    "city": "London",
+                    "state": "",
+                    "zip": "N5 1AR",
+                    "country": "United Kingdom"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "fname": "Jermaine",
+            "lname": "Cole",
+            "image": "/2.jpg",
+            "status": "Contact",
+            "bornday": "1985-01-28",
+            "email": "j.cole@test.com",
+            "address": [
+                {
+                    "street": "2301 Fort Bragg Rd",
+                    "city": "Fayetteville",
+                    "state": "NC",
+                    "zip": "28303",
+                    "country": "United States of America"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "fname": "Kendrick",
+            "lname": "Lamar",
+            "image": "/3.jpg",
+            "status": "Offer",
+            "bornday": "1987-06-17",
+            "email": "k.dot@test.com",
+            "address": [
+                {
+                    "street": "200 W Compton Blvd",
+                    "city": "Compton",
+                    "state": "CA",
+                    "zip": "90220",
+                    "country": "United States of America"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "fname": "Quincy",
+            "lname": "Hanley",
+            "image": "/4.jpg",
+            "status": "Interview",
+            "bornday": "1986-10-26",
+            "email": "schoolboy-q@test.com",
+            "address": [
+                {
+                    "street": "5929 S Vermont Ave",
+                    "city": "Los Angeles",
+                    "state": "CA",
+                    "zip": "90044",
+                    "country": "United States of America"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "fname": "Vince",
+            "lname": "Staples",
+            "image": "/5.jpg",
+            "status": "Finished",
+            "bornday": "1993-07-02",
+            "email": "staples@test.com",
+            "address": [
+                {
+                    "street": "6125 Coke Ave",
+                    "city": "Long Beach",
+                    "state": "CA",
+                    "zip": "90805",
+                    "country": "United States of America"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "fname": "Denzel",
+            "lname": "Curry",
+            "image": "/6.jpg",
+            "status": "Offer",
+            "bornday": "1995-02-16",
+            "email": "zel@test.com",
+            "address": [
+                {
+                    "street": "3301 Miami Gardens Dr",
+                    "city": "Miami Gardens",
+                    "state": "FL",
+                    "zip": "33056",
+                    "country": "United States of America"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "fname": "Kenneth",
+            "lname": "Blume",
+            "image": "/7.jpg",
+            "status": "Contact",
+            "bornday": "1991-05-10",
+            "email": "kenny.beats@test.com",
+            "address": [
+                {
+                    "street": "10 Hillside Rd",
+                    "city": "Greenwich",
+                    "state": "CT",
+                    "zip": "06830",
+                    "country": "United States of America"
+                }
+            ]
+        }
+    ]
+}

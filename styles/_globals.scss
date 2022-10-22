@@ -1,0 +1,30 @@
+:root {
+  --base-background: #e1dfd7;
+  --secondary-background: #d0c7b8;
+  --large-header-size: #{rem(48)};
+  --medium-header-size: #{rem(32)};
+  --small-header-size: #{rem(16)};
+  --large-body-size: #{rem(24)};
+  --medium-body-size: #{rem(16)};
+  --small-body-size: #{rem(14)};
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--base-background);
+  font-family: GratoGrotesk,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+

@@ -1,0 +1,16 @@
+.recruitee-list {
+    background-color: var(--secondary-background);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: rem(20);
+
+    &::before {
+        @include grid-background;
+
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        z-index: 1;
+    }
+}

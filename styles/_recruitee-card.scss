@@ -1,0 +1,28 @@
+.recruitee-card {
+    display: grid;
+    grid-template-areas: "information image";
+    grid-template-columns: 1fr auto;
+    background-color: var(--base-background);
+    padding: rem(10);
+    margin: rem(80) rem(78) rem(78) rem(80);
+    border: rem(2) solid white;
+    z-index: 2;
+    min-height: rem(162);
+}
+
+.recruitee-card__image {
+    grid-area: image;
+    object-fit: cover;
+}
+
+.recruitee-card__information {
+    grid-area: information;
+}
+
+.information__heading {
+    @include heading('medium', 'medium');
+}
+
+.information__address-line {
+    display: block;
+}
