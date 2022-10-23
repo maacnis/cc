@@ -4,6 +4,7 @@ import Image from 'next/image';
 import logo from '../public/cc-logo-white.svg';
 import hamburger from '../public/menu.svg';
 import close from '../public/close.svg';
+import translations from '../local/translations.json';
 
 const Navigation: NextPage = () => {
     const onButtonClick = (e: any) => {
@@ -59,10 +60,10 @@ const Navigation: NextPage = () => {
                 </div>
                 <nav className="navigation-container__nav">
                     <Link href="/">
-                        <a className="nav-item">Home</a>
+                        <a className="nav-item">{translations.navigationHome}</a>
                     </Link>
                     <Link href="/form">
-                        <a className="nav-item">Add recruitee</a>
+                        <a className="nav-item">{translations.navigationAddRecruitee}</a>
                     </Link>
                 </nav>
             </div>

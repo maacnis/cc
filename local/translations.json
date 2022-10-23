@@ -1,4 +1,6 @@
 {
+    "navigationHome": "Home",
+    "navigationAddRecruitee": "Add recruitee",
     "sectionFirstPageHeading": "Recruitment list",
     "sectionFirstPageDescription": "A list of our current recruitment-processes, here you can see their information, such as, full name, age and address. You will also find their contact-information, which is an e-mail. They are also presented with an picture. And most important you can see in which state they are in in our recruitment-process.",
     "formFirstPageDescription": "At the case of a new recruitee will be relevant you can add them in the system to track their progress, ",
