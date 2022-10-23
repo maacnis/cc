@@ -13,14 +13,12 @@
     background-color: var(--secondary-background);
 }
 
-.section-heading {
-    @include heading('xlarge');
+.section-link {
+    color: var(--link-color);
 }
 
-.section-description {
-    @include body('large');
-
-    width: 70%;
+.section-form {
+    display: grid;
     margin-bottom: rem(60);
 }
 
@@ -29,11 +27,32 @@
     .section-1 {
         padding: 0 rem(20);
     }
+
+    .section-heading {
+        @include heading('large');
+    }
+    
+    .section-description {
+        @include body('medium');
+    
+        margin-bottom: rem(40);
+    }
 }
 
 // Desktop
 @include media('>=nav') {
     .section-1 {
         padding-left: rem(160);
+    }
+
+    .section-heading {
+        @include heading('xlarge');
+    }
+    
+    .section-description {
+        @include body('large');
+    
+        width: 70%;
+        margin-bottom: rem(60);
     }
 }

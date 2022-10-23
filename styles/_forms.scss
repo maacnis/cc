@@ -1,0 +1,44 @@
+fieldset {
+    border: 2px solid var(--secondary-background);
+    display: grid;
+}
+
+.form__success-message {
+    display: none;
+    margin-top: rem(20);
+}
+
+.form {
+    &.success {
+        .form__success-message {
+            display: block;
+        }
+    }
+}
+
+.field {
+    display: grid;
+    margin-bottom: rem(25);
+
+    label {
+        margin-bottom: rem(10);
+    }
+
+    input,
+    select {
+        border: 2px solid var(--secondary-background);
+        padding: rem(15);
+    }
+}
+
+.form-button {
+    @include body('large');
+
+    color: #fff;
+    background-color: var(--button-color);
+    height: rem(80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
