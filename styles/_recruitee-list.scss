@@ -1,6 +1,6 @@
 .recruitee-list {
     display: grid;
-    margin-bottom: rem(20);
+    margin-bottom: rem(60);
 
     &::before {
         @include grid-background;
